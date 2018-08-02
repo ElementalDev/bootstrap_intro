@@ -2,9 +2,81 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Tab Title -->
+    <title>Document</title>
+    <!-- Visual aid of the grid system in Bootstrap -->
+    <style>
+      .row {
+        margin-bottom: 20px;
+      }
+
+      .row .row {
+        margin-top: 10px;
+        margin-bottom: 0;
+      }
+
+      [class*="col-"] {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #eee;
+        background-color: rgba(86, 61, 124, .15);
+        border: 1px solid #ddd;
+        border: 1px solid rgba(86, 61, 124, .2);
+      }
+    </style>
   </head>
   <body>
-
+    <!-- Tells Bootstrap to keep in content in fixed width container. There is also a fluid width container -->
+    <div class="container">
+      <h1>Hello World!</h1>
+      <!-- Bootstrap divides the screen into 12 columns within a row to use. -->
+      <div class="row">
+        <!-- Decides how many columns we want to use -->
+        <div class="col-md-4">Third
+          <div class="row">
+            <div class="col-md-6">Half</div>
+          </div>
+        </div>
+        <div class="col-md-6">Half</div>
+        <div class="col-md-2">Sixth</div>
+      </div>
+      <div class="row">
+        <!-- Decides how many columns we want to use -->
+        <div class="col-md-3">3 Columns</div>
+        <div class="col-md-4">4 Columns</div>
+        <div class="col-md-5">5 Columns</div>
+      </div>
+      <div class="row">
+        <!-- Decides how many columns we want to use -->
+        <div class="col-md-4">4 Columns</div>
+        <div class="col-md-1">1 Column</div>
+        <div class="col-md-7">7 Columns</div>
+      </div>
+      <div class="row">
+        <!-- Decides how many columns we want to use -->
+        <div class="col-md-1">1 Column</div>
+        <div class="col-md-8">8 Columns</div>
+        <div class="col-md-2">2 Columns</div>
+        <div class="col-md-1">1 Column</div>
+      </div>
+      <!-- Demonstrating push and pull -->
+      <div class="row">
+        <div class="col-md-9 col-md-push-3">Pushed 3 from the left</div>
+      </div>
+      <div class="row">
+        <div class="col-md-9 col-md-pull-3">Pulled 3 from the left</div>
+      </div>
+      <!-- Demonstrating offsetting -->
+      <div class="row">
+        <div class="col-md-3 col-md-offset-3">Offset 3 from where it should start</div>
+        <div class="col-md-3 col-md-offset-3">Offset 3 from where it should start</div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-md-offset-10">Offset 6 from where it should start</div>
+      </div>
+    </div>
   </body>
 </html>
