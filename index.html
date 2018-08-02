@@ -30,12 +30,12 @@
   </head>
   <body>
     <!-- Tells Bootstrap to keep in content in fixed width container. There is also a fluid width container -->
-    <div class="container">
-      <h1>Hello World!</h1>
+    <div class="container-fluid">
+      <!--<h1>Hello World!</h1> -->
       <!-- Bootstrap divides the screen into 12 columns within a row to use. -->
-      <div class="row">
+      <!-- <div class="row"> -->
         <!-- Decides how many columns we want to use -->
-        <div class="col-md-4">Third
+        <!-- <div class="col-md-4">Third
           <div class="row">
             <div class="col-md-6">Half</div>
           </div>
@@ -43,39 +43,60 @@
         <div class="col-md-6">Half</div>
         <div class="col-md-2">Sixth</div>
       </div>
-      <div class="row">
+      <div class="row"> -->
         <!-- Decides how many columns we want to use -->
-        <div class="col-md-3">3 Columns</div>
+        <!-- <div class="col-md-3">3 Columns</div>
         <div class="col-md-4">4 Columns</div>
         <div class="col-md-5">5 Columns</div>
       </div>
-      <div class="row">
+      <div class="row"> -->
         <!-- Decides how many columns we want to use -->
-        <div class="col-md-4">4 Columns</div>
+        <!-- <div class="col-md-4">4 Columns</div>
         <div class="col-md-1">1 Column</div>
         <div class="col-md-7">7 Columns</div>
       </div>
-      <div class="row">
+      <div class="row"> -->
         <!-- Decides how many columns we want to use -->
-        <div class="col-md-1">1 Column</div>
+        <!-- <div class="col-md-1">1 Column</div>
         <div class="col-md-8">8 Columns</div>
         <div class="col-md-2">2 Columns</div>
         <div class="col-md-1">1 Column</div>
-      </div>
+      </div> -->
       <!-- Demonstrating push and pull -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-9 col-md-push-3">Pushed 3 from the left</div>
       </div>
       <div class="row">
         <div class="col-md-9 col-md-pull-3">Pulled 3 from the left</div>
-      </div>
+      </div> -->
       <!-- Demonstrating offsetting -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-3 col-md-offset-3">Offset 3 from where it should start</div>
         <div class="col-md-3 col-md-offset-3">Offset 3 from where it should start</div>
       </div>
       <div class="row">
         <div class="col-md-6 col-md-offset-10">Offset 6 from where it should start</div>
+      </div>-->
+      <!-- Hides below xs break -->
+      <div class="row hidden-xs">
+        <div class="col-lg-4 col-md-6">
+          Demo1
+        </div>
+        <div class="col-lg-4 col-md-6">
+          Demo2
+        </div>
+        <div class="col-lg-4 col-md-6">
+          Demo3
+        </div>
+      </div>
+      <!-- Show only on small devices -->
+      <div class="row visible-xs">
+        <div class="col-xs-6">
+          Visible1
+        </div>
+        <div class="col-xs-6">
+          Visible2
+        </div>
       </div>
     </div>
   </body>
